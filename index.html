@@ -24,7 +24,7 @@
 
         <img src="https://media.licdn.com/dms/image/v2/D4E03AQG0Hhh8k_zkzw/profile-displayphoto-shrink_800_800/B4EZRrUQIAGcAc-/0/1736967259221?e=1773878400&v=beta&t=Fw2PkU9kwIwwK9GGsvLnSoOOJgzXQ7BDsm6BFJmE9pA" alt="">
 
-        <article
+        <article>
             <p>Sou um estudante de engenharia de software, apaixonado por tecnologia e desenvolvimento de software. Tenho experiência em diversas linguagens de programação, incluindo Java, Python e JavaScript. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para me tornar um desenvolvedor mais completo.</p>
 
         </article>
@@ -69,11 +69,36 @@
 
             <p>Tem um projeto em mente? Entre em contato</p>
 
-            <address>
-                E-mail: <a href="mailto:carloseduardo391@hotmail.com"> carloseduardo391@hotmail.com</a>
-                telefone: <a href="tel:47988567547">47-988567547</a>
+           <form action="">
 
-            </address>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="orçamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outros">Outros</option>
+                </select>
+                <br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea name="mensagem" id="mensagem" rows="4" cols="20"></textarea><br>
+
+                <input type="checkbox" id="enviar" name="enviar" value="Enviar">
+                <label for="enviar">Enviar mensagem</label>
+
+                <br>
+
+                <input type="submit" value="Enviar">
+
+           </form>
 
         </section>
     </footer>
