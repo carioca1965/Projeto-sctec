@@ -1,150 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduardo</title>
+    <title>Portfólio - Eduardo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
+
     <header>
-        <h1>Olá, meu nome é Eduardo!</h1>
+        <h1>Eduardo - Desenvolvedor em Formação</h1>
+        <button id="temaBtn">Alternar Tema</button>
+
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-
     </header>
-    <section>
-        <h2 id="sobre">Sobre mim</h2>
 
-        <img src="https://media.licdn.com/dms/image/v2/D4E03AQG0Hhh8k_zkzw/profile-displayphoto-shrink_800_800/B4EZRrUQIAGcAc-/0/1736967259221?e=1773878400&v=beta&t=Fw2PkU9kwIwwK9GGsvLnSoOOJgzXQ7BDsm6BFJmE9pA" alt="">
+    <main>
 
-        <article>
-            <p>Sou um estudante de engenharia de software, apaixonado por tecnologia e desenvolvimento de software. Tenho experiência em diversas linguagens de programação, incluindo Java, Python e JavaScript. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para me tornar um desenvolvedor mais completo.</p>
-
-        </article>
-
-        <aside>
-            <h3>Habilidades</h3>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </aside>
-        
-    </section>
-
-    <section>
-
-        <h2 id="projetos">Projetos</h2>
-
-        <article>
-            <h3>Projeto 1: Site de Portfólio</h3>
-            <p>Desenvolvi um site de portfólio pessoal para mostrar meus projetos e habilidades. O site foi construído usando HTML, CSS e JavaScript, e inclui uma seção de blog onde compartilho minhas experiências e aprendizados no mundo da tecnologia.</p>
-        </article>
-
-        <article>
-            <h3>Portfólio</h3>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
             <p>
-                Esse foi o primeiro projeto completo que desenvolvi  estudando front-end
+                Sou estudante de Engenharia de Software, apaixonado por tecnologia
+                e desenvolvimento web. Estou em constante aprendizado nas áreas
+                de Front-End e Back-End, buscando evoluir minhas habilidades técnicas
+                e comportamentais.
             </p>
+        </section>
 
-        </article>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
 
-    </section>
+            <h3>Técnicas</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git e GitHub</li>
+            </ul>
 
-    <section id="habilidades">
-        <h2>Habilidades  e  tecnologias</h2>
+            <h3>Comportamentais</h3>
+            <ul>
+                <li>Trabalho em equipe</li>
+                <li>Organização</li>
+                <li>Resolução de problemas</li>
+                <li>Aprendizado contínuo</li>
+            </ul>
+        </section>
 
-        <table>
+        <section id="projetos">
+            <h2>Projetos</h2>
 
-            <thead>
-              <tr>
-                <th>Tecnologia</th>
-                <th>Nível</th>
-                <th>Descrição</th>
-              </tr>
+            <article>
+                <h3>Sistema de Cadastro Web</h3>
+                <p>Aplicação web para cadastro e listagem de usuários com validação de formulário.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                <p><a href="#">Ver demonstração</a></p>
+            </article>
 
-            <thead>
+            <article>
+                <h3>Landing Page Comercial</h3>
+                <p>Desenvolvimento de página responsiva para apresentação de serviços.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS</p>
+                <p><a href="#">Ver demonstração</a></p>
+            </article>
 
-            <tbody>
-              <tr>
-                <td>HTML</td>
-                <td>Avançado</td>
-                <td>Domínio completo da estruturação de páginas web usando HTML5.</td>
-              </tr>
-
-              <tr>
-                <td>CSS</td>
-                <td>Intermediário</td>
-                <td>Conhecimento sólido em estilização de páginas web, incluindo Flexbox e Grid.</td>
-              </tr>
-
-              <tr>
-                <td>JavaScript</td>
-                <td>Intermediário</td>
-                <td>Experiência em desenvolvimento de interatividade e manipulação do DOM.</td>
-              </tr>
-
-            </tbody>
-            
-            
-        </table>
-
-
-    </section>
-
-    <footer>
-        <p>Direitos reservados a Eduardo</p>
+            <article>
+                <h3>API REST Simulada</h3>
+                <p>Projeto fictício simulando integração com API para exibição de dados.</p>
+                <p><strong>Tecnologias:</strong> JavaScript</p>
+                <p><a href="#">Ver demonstração</a></p>
+            </article>
+        </section>
 
         <section id="contato">
-
             <h2>Contato</h2>
 
-            <p>Tem um projeto em mente? Entre em contato</p>
+            <form id="formContato">
+                <label>Nome:</label>
+                <input type="text" required>
 
-           <form action="">
+                <label>Email:</label>
+                <input type="email" required>
 
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br>
+                <label>Mensagem:</label>
+                <textarea required></textarea>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone"><br>
-
-                <label for="assunto">Assunto:</label>
-                <select id="assunto" name="assunto">
-                    <option value="orçamento">Orçamento</option>
-                    <option value="duvida">Dúvida</option>
-                    <option value="outros">Outros</option>
-                </select>
-                <br>
-
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea name="mensagem" id="mensagem" rows="4" cols="20"></textarea><br>
-
-                <input type="checkbox" id="enviar" name="enviar" value="Enviar">
-                <label for="enviar">Enviar mensagem</label>
-
-                <br>
-
-                <input type="submit" value="Enviar">
-
-           </form>
-
+                <button type="submit">Enviar</button>
+            </form>
         </section>
-    </footer>
-        
 
+    </main>
+
+    <footer>
+        <p>© 2026 Eduardo - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
